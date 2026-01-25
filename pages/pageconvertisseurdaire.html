@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="px-5">
+    <nav class=" pt-3">
+        <div class="flex flex-row gap-30 "> <button onclick="window.history.back()"><img src="../assets/icones/chevron-left.png" alt="" class=""></button>
+            <p class="font-bold"> Convertisseur d'aire</p>
+        </div>
+    </nav>
+    <div class="flex flex-row justify-between pb-25 pt">
+        <p class="flex gap-2 items-center">
+            <span id="firstDigit"> km² </span>
+            <a href="./souspageunite.html" >  
+             <img src="../assets/icones/chevron-down.png" class="h-4" alt=""></a></p>
+        <div class="text-right">
+            <p class="text-orange-400 text-[25px]">1</p>
+            <p class="text-sm">kilometre carree</p>
+        </div>
+    </div>
+    <div class="flex flex-row justify-between pb-25 pt">
+        <p class="flex gap-2 items-center">
+            <span id="secondDigit"> km² </span>
+            <a href="./souspageunite.html" >  
+             <img src="../assets/icones/chevron-down.png" class="h-4" alt=""></a></p>
+        <div class="text-right" >
+            <p class="text-orange-400 text-[25px]">1</p>
+            <p class="text-sm">kilometre carree</p>
+        </div>
+    </div>
+
+    <div class="flex pt ">
+        <div class=" grid grid-cols-3 w-[80vw] space-y-5">
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="7"> 7 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="8"> 8 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="9"> 9 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="4"> 4 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="5"> 5 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="6"> 6 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="1"> 1 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="2"> 2 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="3"> 3 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="0"> 0 </button>
+            <button class="keybut w-20 h-20 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15" type="button" id="" data-value="."> , </button>
+
+        </div>
+        <div class="grid grid-rows-2 gap-5 ">
+            <button  class=" w-20 h-40 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15 text-orange-400" type="button" id="clear"> AC </button>
+            <button  class=" w-20 h-40 rounded-full shadow-xl bg-gray-100 text-xl lg:w-30 lg:h-15 p-8" type="button" id="clearn"> <img src="../assets/icones/delete.png" alt=""> </button>
+        </div>
+    </div>
+    <script>
+       const firstDigit = document.getElementById('firstDigit');
+const digit = localStorage.getItem("digit");
+
+if (digit) {
+    firstDigit.textContent = digit;
+    localStorage.removeItem("digit");
+}
+ 
+    </script>
+    <script src="../scripts/scriptdigit.js"></script>
+</body>
+</html>
