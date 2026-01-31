@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style1.css">
     <title>Document</title>
 </head>
-<body class="h-[100vh] w-[100vw]">
+<body class="h-[100vh] w-[100vw] bg-gray-500">
     <nav class="fixed w-[100vw] h-[6vh] flex felx-row justify-between p-3 bg-gray-50">
         
         <button id="menu-autre" class="w-10 h-10">
@@ -28,47 +28,70 @@
                 <a href="./pages/menuburger.html"><img src="./assets/icones/ellipsis-vertical (2).png" alt="" ></a>
         </button>
     </nav>
-    <section class="contener h-[93vh] lg:grid lg:grid-cols">
-        <div class="   h-[39vh] pt-[6vh]">
+    <section class="contener h-[100vh] lg:grid lg:grid-cols bg-gray-500 ">
+        <div class=" bg-white m-5 h-[21vh] border mt-[8vh] " id="history">
+                <div class="border-b border-b-gray-300 flex-1 overflow-y-auto h-[13vh] pr-5">
+                        <p class="text-gray-400 flex justify-end">History</p>
+                        <div class="text-gray-400 flex justify-end" id="history"> 0</div>
+                </div>
             
 
-            <input type="text"  class="  border-b border-b-gray-400 lg:ml-40 w-[90vw] text-[30px] " placeholder=" 0 " id="display" readonly>
+            <input type="text"  class="h-[7vh] border-b border-b-gray-300 lg:ml-40 w-[90vw] text-[30px] " placeholder=" 0 " id="display" readonly>
         </div>
-        <div class="h-[44vh] w-[100vw] text-[18px] space-y-2 border-t border-t-gray-300 lg:mt-[33vh] flex flex-col justify-baseline lg:border lg:border-gray-200 lg:h-[60vh]" id="clavier">
+        <div class="h-[44vh] w-[98vw] text-[18px] space-y-2 border-t border-t-gray-300 lg:mt-[33vh] flex flex-col justify-baseline lg:border lg:border-gray-200 lg:h-[60vh]
+                bg-gray-500 p-3" id="clavier">
             <!-- premier widget ou ajout boutton -->
-            <div class="hidden flex flex-row justify-between " id="premierLigne">
+             <div class="hidden flex flex-row justify-between " id="ppremierLigne">
                 <button  class=" keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
+                     type="button" id="" data-value=""> 2nd </button>
+                <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
+                        lg:w-30 lg:h-15 active:scale-95"
+                     type="button" id="" data-value="|x|"> |x| </button>
+                <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
+                    lg:w-30 lg:h-15 active:scale-95     
+                " type="button" id="" data-value="n"> n! </button>
+                <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
+                        lg:w-30 lg:h-15 active:scale-95"
+                     type="button" id="" data-value="A"> A<span class="text-[10px]">(a,b)</span> </button>
+                <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100   
+                        lg:w-30 lg:h-15 active:scale-95"
+                     type="button" id="" data-value="C"> C<span class="text-[10px]">(a,b)</span> </button>
+
+            </div>
+             <div class="hidden flex flex-row justify-between " id="premierLigne">
+                <button  class=" keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="2nd"> 2nd </button>
                 <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="rad"> rad </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                    lg:w-30 lg:h-15     
+                    lg:w-30 lg:h-15 active:scale-95     
                 " type="button" id="" data-value="sin"> sin </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="cos"> cos </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100   
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="tan"> tan </button>
 
             </div>
             <div class="hidden flex flex-row justify-between" id="deuxiemeLigne">
                 <button  class="keybut  w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="^"> x^y </button>
                 <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="log"> log </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                    lg:w-30 lg:h-15     
+                    lg:w-30 lg:h-15 active:scale-95     
                 " type="button" id="" data-value="ln"> ln </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="("> ( </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value=")"> ) </button>
 
             </div>
@@ -76,91 +99,92 @@
             <!-- boutton standart et boutton d'ajout en hidden(les premier boutton) -->
             <div class="flex flex-row justify-between text-orange-500" id="troisiemeLigne">
                 <button  class="hidden keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95 text-black"
                      type="button" id="racinecarree" data-value="√"> √x </button>
                 <button  class=" w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="clear"> C </button>
-                <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                <button class=" w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="sup"> SUP </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="%"> % </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id=""data-value="/"> ÷ </button>
 
             </div>
             <div class="flex flex-row justify-between" id="quartriemeLigne">
                 <button  class="hidden keybut  w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="factoriel" data-value="!"> X! </button>
                 <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="7"> 7 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                    lg:w-30 lg:h-15     
+                    lg:w-30 lg:h-15 active:scale-95     
                 " type="button" id="" data-value="8"> 8 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="9"> 9 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-orange-500 text-xl 
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="*"> X </button>
 
             </div>
             <div class="flex flex-row justify-between" id="cinquemeLigne">
                 <button  class="hidden keybut  w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="equation" data-value="1/x"> 1⁄X </button>
                 <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="4"> 4 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="5"> 5 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="6"> 6 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-orange-500 text-xl font-bold
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="-"> - </button>
 
             </div>
             <div class="flex flex-row justify-between" id="sixiemeLigne">
                 <button  class="hidden keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="pie" data-value="π"> π </button>
                 <button  class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-x
-                        lg:w-30 lg:h-15l
+                        lg:w-30 lg:h-15 active:scale-95l
                     " type="button" id="" data-value="3"> 3 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="2"> 2 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95 "
                      type="button" id="" data-value="1"> 1 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl text-orange-500 font-bold
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95 
+                         active:scale-95"
                      type="button" id="" data-value="+"> + </button>
 
             </div>
             <div class="flex flex-row justify-between" id="septiemeLigne">
                 <button  class="  w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl text-orange-500
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="addkey"> ++ </button>
                 <button class="hidden keybut  w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="exponentiel" data-value="e"> e </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value="0"> 0 </button>
                 <button class="keybut w-17 h-17 rounded-full shadow-xl bg-gray-100 text-xl
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="" data-value=","> , </button>
                 <button class="w-17 h-17 rounded-full shadow-xl bg-orange-500 text-xl text-white font-bold
-                        lg:w-30 lg:h-15"
+                        lg:w-30 lg:h-15 active:scale-95"
                      type="button" id="equal"> = </button>
 
             </div>
@@ -171,7 +195,7 @@
     </section>
     
 
-    <script src="./scripts/script1.js"></script>
-    <script src="./scripts/scritp2afficharge.js"></script>
+    <script type="module" src="./scripts/script1.js"></script>
+    <script type="module" src="./scripts/scritp2afficharge.js"></script>
 </body>
 </html>
