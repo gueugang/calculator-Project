@@ -1,24 +1,24 @@
 body{
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color:hsl(0, 0%, 95%);
 }
 .contener{
     display: grid;
     grid-template-rows: 1fr 2fr;
-    
     margin-bottom: 0;
     gap: 2px;
     padding: 3px;
 }
 @media (min-width: 600px) {
     .contener{
-           
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: end;
         margin-bottom: 0;
         gap: 2px;
         padding: 3px;
-        
-}
 }
