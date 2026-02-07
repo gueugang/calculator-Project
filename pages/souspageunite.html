@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="pl-10 space-y-8 flex flex-col  items-start text-xl">
+    <div class="pl-10  text-xl">
         <p class="text-center font-bold">Sélectionner une uniter</p>
-        <button class="key" data-value="km²" type="button" id="b1">Kilometre carrée km²</button>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-10 space-y-8 flex flex-col  items-start">
+        <button class="key mt-8" data-value="km²" type="button" id="b1">Kilometre carrée km²</button>
         <button class="key" data-value="ha" type="button" id="b2">Hectare ha</button>
         <button class="key" data-value="a" type="button"> aire a</button>
         <button class="key" data-value="m²" type="button"> Mètre carrée m²</button>
@@ -21,8 +22,9 @@
         <button class="key" data-value="mile²" type="button" > Mile carré mile² </button>
         <button class="key" data-value="yd²" type="button"> Yard carré yd² </button>
         <button class="key" data-value="ft²" type="button"> Pied carré ft² </button>
+        <!-- </div> -->
 
-        <button class="w-[80vw] bg-gray-500 rounded-full h-15" onclick="window.history.back()"> Annuler </button>
+        <button class="w-[80vw] lg:w-100 bg-gray-500 rounded-full h-15" onclick="window.history.back()"> Annuler </button>
     </div>
 
 

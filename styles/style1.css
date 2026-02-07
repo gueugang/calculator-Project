@@ -1,16 +1,16 @@
 body{
     margin: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     height: 150vh;
-    background-color:hsl(0, 0%, 95%);
+    background-color:hsl(0, 0%, 95%); */
 }
 .contener{
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
     margin-bottom: 0;
-    gap: 2px;
+    gap: 0px;
     padding: 3px;
 }
 @media (min-width: 600px) {
@@ -21,4 +21,4 @@ body{
         margin-bottom: 0;
         gap: 2px;
         padding: 3px;
-}
+}}

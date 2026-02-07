@@ -28,7 +28,7 @@ export function valeurAbsolue(a){
 }
 //--------fonction de division a par entier-----------------
 export function divisionEntier(a, b){
-    return a
+    return Math.trunc(a/b);
 }
 //----------fonctiond'elevation d'un nombre au carree------------
 export function square(a){
@@ -55,4 +55,64 @@ export function ln(x){
     let value = Math.log(x);
     return value;
 }
+//---------export function log(x)-------------
+export function log(x){
+    let value = Math.log10(x);
+    return value;
+}
+//---------fonction racine 
+export function racinecarree(a){
+    if(a > 0){
+    return Math.sqrt(a);
+    }else{
+        display.value= Erreur;
+    }
+}
+//------racine cubique-------------
+ export function racinecubique(a){
+    return Math.cbrt(a);
+ }
+//-------------racine niemme------------
+ export function racineniemme(a, n){
+    return Math.pow(a, 1/n);
+ }
 
+
+ //----------fonction-- factorielle------------
+ export function factorielle(n){
+    if(n === 1 || n === 0){
+        return 1;
+    }else{
+        let facto = n;
+        for(let i= 1; i < n; i++){
+            facto = facto*(n-i);
+        }
+        return facto;
+    }
+ }
+//-------------------fonction arrangement--------------------------
+export function arrangement(a,b){
+    if(a === 0){
+        return 1;
+    }
+    if(a ===1 ){
+        return b;
+    }
+    return factorielle(b)/factorielle(b-a);
+}
+//------------fonctioncombinaison-------------------
+ export function combinaison(a, b){
+    if(a === 0){
+        return 1;
+
+    }
+    if(a===1){
+        return(b);
+    }else{
+        return arrangement(a, b)/factorielle(a);
+    }
+ }
+ //--------------------inverse -------------------------
+ export function inverse(a){
+    return 1/a;
+ }

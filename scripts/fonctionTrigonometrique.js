@@ -1,6 +1,12 @@
+//--------fonction pie----------------
+export function valeurpie(){
+    return Math.PI;
+}
+
+
 //-----------fonction de conversion de valeur d'angle en degre en radian
 export function conversionRadian(a){
-    let radian = a*(Math.PI)/180;
+    const radian = a*(Math.PI)/180;
     return radian;
 }
 //--------fonction cosinus de x-------------
@@ -19,10 +25,11 @@ export function tangente(x){
     return Math.tan(radian);
 }
 //-----------foncton arc pour le retour des angle en degrée --------------
-export function arccons(x){
-    const radian = Math.acos(x);
-    let angle = radian*180/(Math.PI)
-    ;
+export function arccos(x){
+    let radian = Math.acos(x);
+    console.log(radian);
+    let angle = (radian*180)/(Math.PI);
+    console.log(angle);
     return angle;
 }
 
